@@ -340,7 +340,7 @@ public class ApplicationView {
         final Root<Item> root = cr.from(Item.class);
         cr.select(cb.avg(root.get("itemPrice")));
         Query<Double> query = session.createQuery(cr);
-        final List avgItemPriceList = query.getResultList();
+        final List<Double> avgItemPriceList = query.getResultList();
         // session.createCriteria(Item.class).setProjection(Projections.projectionList().add(Projections.avg("itemPrice"))).list();
 
         final Double avgItemPrice[] = new Double[avgItemPriceList.size()];

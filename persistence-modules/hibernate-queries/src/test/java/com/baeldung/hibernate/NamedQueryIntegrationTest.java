@@ -1,14 +1,21 @@
 package com.baeldung.hibernate;
 
-import com.baeldung.hibernate.entities.Department;
-import com.baeldung.hibernate.entities.DeptEmployee;
+import java.io.IOException;
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.NativeQuery;
 import org.hibernate.query.Query;
-import org.junit.*;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
-import java.io.IOException;
+import com.baeldung.hibernate.entities.Department;
+import com.baeldung.hibernate.entities.DeptEmployee;
+
 
 public class NamedQueryIntegrationTest {
     private static Session session;
@@ -56,6 +63,15 @@ public class NamedQueryIntegrationTest {
         DeptEmployee result = query.getSingleResult();
         Assert.assertNotNull(result);
         Assert.assertEquals("John Wayne", result.getName());
+    }
+    
+    @Test
+    public void whenNamedQueryIsCalledUsingCreateNamedQuery_ThenOk2() {
+        Query<DeptEmployee> query = session.createNamedQuery("DeptEmployee_FindByDepartmentName", DeptEmployee.class);
+        query.setParameter("name", "Sales");
+        List<DeptEmployee> result = query.getResultList();
+        Assert.assertNotNull(result);
+        //Assert.assertEquals("John Wayne", result.getName());
     }
        
     @Test
