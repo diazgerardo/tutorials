@@ -10,9 +10,9 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for UserRequest complex type.
+ * <p>Clase Java para UserRequest complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="UserRequest"&gt;
@@ -45,7 +45,7 @@ public class UserRequest
     protected String name;
 
     /**
-     * Gets the value of the id property.
+     * Obtiene el valor de la propiedad id.
      * 
      */
     public int getId() {
@@ -53,7 +53,7 @@ public class UserRequest
     }
 
     /**
-     * Sets the value of the id property.
+     * Define el valor de la propiedad id.
      * 
      */
     public void setId(int value) {
@@ -61,7 +61,7 @@ public class UserRequest
     }
 
     /**
-     * Gets the value of the name property.
+     * Obtiene el valor de la propiedad name.
      * 
      * @return
      *     possible object is
@@ -73,7 +73,7 @@ public class UserRequest
     }
 
     /**
-     * Sets the value of the name property.
+     * Define el valor de la propiedad name.
      * 
      * @param value
      *     allowed object is

@@ -70,6 +70,7 @@
             <artifactId>commons-text</artifactId>
             <version>${commons-text.version}</version>
         </dependency>
+
     </dependencies>
 
     <properties>

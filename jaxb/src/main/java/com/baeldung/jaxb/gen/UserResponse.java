@@ -14,9 +14,9 @@ import org.w3._2001.xmlschema.Adapter1;
 
 
 /**
- * <p>Java class for UserResponse complex type.
+ * <p>Clase Java para UserResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="UserResponse"&gt;
@@ -59,7 +59,7 @@ public class UserResponse
     protected Calendar created;
 
     /**
-     * Gets the value of the id property.
+     * Obtiene el valor de la propiedad id.
      * 
      */
     public int getId() {
@@ -67,7 +67,7 @@ public class UserResponse
     }
 
     /**
-     * Sets the value of the id property.
+     * Define el valor de la propiedad id.
      * 
      */
     public void setId(int value) {
@@ -75,7 +75,7 @@ public class UserResponse
     }
 
     /**
-     * Gets the value of the name property.
+     * Obtiene el valor de la propiedad name.
      * 
      * @return
      *     possible object is
@@ -87,7 +87,7 @@ public class UserResponse
     }
 
     /**
-     * Sets the value of the name property.
+     * Define el valor de la propiedad name.
      * 
      * @param value
      *     allowed object is
@@ -99,7 +99,7 @@ public class UserResponse
     }
 
     /**
-     * Gets the value of the gender property.
+     * Obtiene el valor de la propiedad gender.
      * 
      * @return
      *     possible object is
@@ -111,7 +111,7 @@ public class UserResponse
     }
 
     /**
-     * Sets the value of the gender property.
+     * Define el valor de la propiedad gender.
      * 
      * @param value
      *     allowed object is
@@ -123,7 +123,7 @@ public class UserResponse
     }
 
     /**
-     * Gets the value of the created property.
+     * Obtiene el valor de la propiedad created.
      * 
      * @return
      *     possible object is
@@ -135,7 +135,7 @@ public class UserResponse
     }
 
     /**
-     * Sets the value of the created property.
+     * Define el valor de la propiedad created.
      * 
      * @param value
      *     allowed object is
